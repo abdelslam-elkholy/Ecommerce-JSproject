@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body onload="loadData(0)">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">COLO <span class="logo-red"> SHOP</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link header-links" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-links" href="./about.html">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+
+          <div class="dropdown d-flex">
+            <input class="btn searchInput dropdown-toggle me-5 col-12 " type="text" data-bs-toggle="dropdown"
+              aria-expanded="false" placeholder="What are you looking for ?" style="font-size: 25px;border: 1px red solid;">
+
+            <ul class="dropdown-menu dropSearch">
+
+            </ul>
+          </div>
+          <!-- <button class="btn btn-outline-danger search-btn ms-3" type="submit" style="font-weight: bold;font-size: 20px;">
+            Search
+          </button> -->
+          <a href="./cart.html" class="btn border-0 mt-2 me-4 position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="cart-icon m-2" viewBox="0 0 576 512">
+              <path
+                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+            </svg>
+
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cartNum">
+              0
+            </span>
+          </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://img.freepik.com/free-photo/full-length-portrait-happy-family_171337-2281.jpg?w=2000"
+          class="d-block w-100 vh-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.shannonspringshotel.com/wp-content/uploads/2020/06/shopping-shannon-springs-2.jpg"
+          class="d-block w-100 vh-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://media.product.which.co.uk/prod/images/original/gm-be61c5f4-1b81-49a7-bc77-a9564e7f51ce-shopping-for-garden-furniture-online.jpg"
+          class="d-block w-100 vh-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="container-fluid mt-2">
+      <div class="container d-flex justify-content-center flex-wrap">
+        <button class="btn border shadow btn-danger btn-all ps-4 pe-4 p-1 m-2">
+          All
+        </button>
+        <button 
+          class="btn border shadow btn-women ps-4 pe-4 p-1 m-2">
+          Women
+        </button>
+        <button 
+          class="btn border shadow btn-men ps-4 pe-4 p-1 m-2">
+          Men
+        </button>
+        <button  class="btn border shadow btn-acces ps-4 pe-4 p-1 m-2">
+          Accessories
+        </button>
+        <button   class="btn border shadow btn-elec ps-4 pe-4 p-1 m-2">
+          Electronics
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container text-center" id="mainContent">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+
+      </div>
+    </div> -->
+  <div id="mainContent" class="d-flex justify-content-around flex-wrap m-4"></div>
+  <footer class="footer p-2 text-center fs-5 fw-bold">
+    &copy;All Copy Rights Reserved to Team 2 , 2023
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header-links
+{
+    font-size: 1.8rem;
+    padding-left: 4rem !important;
+
+}
+.logo
+{
+    font-size: 2rem;
+    font-weight: 800;
+    /* letter-spacing: 3px; */
+}
+.logo-red
+{
+    color: red;
+    animation-name: opacity;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+    
+    /* transition: all .2; */
+
+}
+@keyframes opacity
+{
+    0%{
+        opacity: .4;
+    }
+    
+      50%{
+        opacity: 1;
+    }
+
+    100%{
+       opacity: .4
+    }
+}
+.search-bar
+{
+    margin-right: 2.3rem !important;
+    padding: 1rem;
+    transition: all .2s;
+    /* position:absolute; */
+
+    
+}
+@media (min-width:1000px)
+{
+    .search-bar:focus
+{
+    transform: scaleX(1.2);
+}
+}
+
+.cart-icon
+{
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: rgb(242, 30, 30);
+}
+.search-icon
+{
+    width: 2rem;
+    height: 2rem;
+    fill: rgb(222, 226, 230);
+    position: relative;
+    left: -20rem;
+   
+}
+.mySlide
+{
+    height: 75vh;
+}
+.footer
+{
+    background-color: #dadbdc;
+}
